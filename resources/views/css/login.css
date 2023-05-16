@@ -1,0 +1,280 @@
+.card-slider {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /*
+        height: 70vh;
+        width: 35vw;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    */
+    border-radius: 30px;
+}
+
+.card-slider-body {
+    background: #000000;
+}
+
+.card-slider-footer {
+    background: #171717;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+}
+
+.card-slider-header {
+    border-radius: 30px !important;
+    width: 100%;
+    height: 100%;
+    /*border: 0px;
+    background: #000000;*/
+}
+
+.card-slider-header img {
+    border-radius: 30px;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    filter: invert(49%) sepia(99%) saturate(470%) hue-rotate(144deg) brightness(100%) contrast(90%);
+}
+
+.card-container {
+    gap : 2.25rem;
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    flex-direction: row;
+}
+
+.login-key {
+    height: auto;
+    font-size: 3rem;
+    line-height: 100px;
+    background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-title {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #ECF0F5;
+}
+
+.login-form {
+    margin-top: 0.5rem !important;
+    text-align: center;
+}
+
+input[type=text] {
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 1.4rem;
+    padding-left: 0px;
+    color: #ECF0F5;
+}
+
+input[type=password] {
+    width: 100%;
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    padding-left: 0px;
+    margin-bottom: 1.4rem;
+    color: #ECF0F5;
+}
+
+.form-group {
+    margin-bottom: 1.75rem;
+    outline: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid #0DB8DE;
+    outline: 0;
+    background-color: #1A2226;
+    color: #ECF0F5;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+.form-control-label {
+    font-size: 0.70rem;
+    color: #6C6C6C;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn-outline-primary {
+    background: transparent;
+    border-color: #0DB8DE;
+    color: #0DB8DE;
+    border-radius: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-outline-primary:hover {
+    background-color: #0DB8DE;
+    color: white;
+    right: 0px;
+}
+
+.login-btm {
+    float: right;
+}
+
+.login-button {
+    padding-right: 0px;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.login-text {
+    text-align: left;
+    padding-left: 0px;
+    color: #A2A4A4;
+}
+
+.loginbttm {
+    padding: 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-container > .card {
+    flex-basis: 100%;
+    border-radius: 30px;
+    background-color: #1A2226;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-container > .card > * {
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+}
+
+@media (min-width: 768px) {
+    .card-container > .card > * {
+        margin-top: 2.25rem;
+        margin-bottom: 2.25rem;
+    }
+}
+
+.card-container > .card > .card {
+    flex-basis: 100%;
+}
+
+.card-container > .card {
+    height: 80vh;
+    width: 40vw;
+}
+
+.left {
+    animation: slide_lorenzo_left 1s forwards;
+}
+
+.right {
+    animation: slide_lorenzo_right 1s forwards;
+}
+
+@keyframes slide_lorenzo_right {
+    to {
+        transform: translate(100%);
+    }
+}
+
+@keyframes slide_lorenzo_left {
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(0%);
+    }
+}
+
+@media (max-width: 656px) {
+    .card-container {
+        display: flex;
+        height: 80vh;
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 0.25rem;
+    }
+
+    .card-slider {
+        /*
+                        height: 35vh;
+                        width: 70vw;*/
+        flex-direction: column;
+        border-radius: 30px;
+    }
+
+    .card-container > .card > .card {
+        flex-basis: 100%;
+    }
+
+    .card-container > .card {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .card-container > .card:nth-child(1) {
+        max-height: 100%;
+    }
+
+    .card-container > .card:nth-child(2) {
+        max-height: 100%;
+    }
+
+    .card-container > .card > * {
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+    }
+
+    @keyframes slide_lorenzo_left {
+        from {
+            transform: translate(0, 100%);
+        }
+        to {
+            transform: translate(0, 0%);
+        }
+    }
+    @keyframes slide_lorenzo_right {
+        to {
+            transform: translate(0, 100%);
+        }
+    }
+}
