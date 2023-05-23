@@ -72,8 +72,10 @@
         body {
             overflow-x: hidden;
             font-family: 'Roboto', serif;
-            background: linear-gradient(to right,rgb(67,124,205),rgb(69,214,202));;//linear-gradient(135deg, black, #220033);
-            width: 100vw;
+            /*background: linear-gradient(to right,rgb(67,124,205),rgb(69,214,202));;//linear-gradient(135deg, black, #220033);
+            */width: 100vw;
+            height: 100vh;
+            min-height: 100vh;
             font-size: 3.75rem;
         }
 
@@ -172,101 +174,117 @@
             -webkit-user-select: none;
         }
 
+        section{
+            height: 100vh;
+            min-height: 100vh;
+            width:100vw;
+            background-attachment: fixed;
+        }
+        section:nth-child(1){
+            background-image : url('https://images.unsplash.com/photo-1684125224205-603f78e0fab8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1883&q=80');
+        }
+        section:nth-child(2){
+            background-image : url('https://images.unsplash.com/photo-1684215075838-b68b7557ece0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=668&q=80');
+        }
+        section:nth-child(3){
+            background-image : url('https://i.imgur.com/GL7igry.png');/*url('https://images.unsplash.com/photo-1684054835810-8ed5f6a1d003?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');
+        */}
+
     </style>
 </head>
 <body onload="enhance('lorenzo');">
 {{--<div class="ciao">
     <div class="ciao2">ciao</div>
 </div>--}}
-<div class="lorenzo" id="lorenzo">STOCK&SHOES</div>
-<div class="container">
-    <div class="card-container">
-        <div class="card">
-            <div class=" login-key"><i class="fa fa-user" aria-hidden="true"></i></div>
-            <div class=" login-title">
-                REGISTER
-            </div>
-            <div class=" login-form">
-                <form>
-                    <div class="form-group">
-                        <label class="form-control-label">EMAIL</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-control-label">USERNAME</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-control-label">PASSWORD</label>
-                        <input type="password" class="form-control">
-                    </div>
-
-                    <div class="loginbttm">
-                        <div class="col-lg-6 login-btm login-text" style="float:left!important">
-                            <button type="reset" onclick="slider()" class="btn btn-outline-primary">LOGIN</button>
+<section><div class="lorenzo" id="lorenzo">STOCK&SHOES</div></section>
+<section><div class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class=" login-key"><i class="fa fa-user" aria-hidden="true"></i></div>
+                <div class=" login-title">
+                    REGISTER
+                </div>
+                <div class=" login-form">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-control-label">EMAIL</label>
+                            <input type="text" class="form-control">
                         </div>
-                        <div class="col-lg-6 login-btm login-button">
-                            <button type="submit" class="btn btn-outline-primary">REGISTRATI</button>
+                        <div class="form-group">
+                            <label class="form-control-label">USERNAME</label>
+                            <input type="text" class="form-control">
                         </div>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-        <div class="card">
-            <div class=" login-key"><i class="fa fa-key" aria-hidden="true"></i></div>
-            <div class=" login-title">
-                LOGIN
-            </div>
-            <div class=" login-form">
-                <form>
-                    <div class="form-group">
-                        <label class="form-control-label">USERNAME</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-control-label">PASSWORD</label>
-                        <input type="password" class="form-control">
-                    </div>
-
-                    <div class="loginbttm">
-                        <div class="col-lg-6 login-btm login-text" style="float:left!important">
-                            <button type="reset" onclick="slider()" class="btn btn-outline-primary">REGISTRATI
-                            </button>
+                        <div class="form-group">
+                            <label class="form-control-label">PASSWORD</label>
+                            <input type="password" class="form-control">
                         </div>
-                        <div class="col-lg-6 login-btm login-button">
-                            <button type="submit" class="btn btn-outline-primary">LOGIN</button>
+
+                        <div class="loginbttm">
+                            <div class="col-lg-6 login-btm login-text" style="float:left!important">
+                                <button type="reset" onclick="slider()" class="btn btn-outline-primary">LOGIN</button>
+                            </div>
+                            <div class="col-lg-6 login-btm login-button">
+                                <button type="submit" class="btn btn-outline-primary">REGISTRATI</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="card card-slider left" id="slider">
-            <div class="card-slider-header" style="margin:0">
-                <img src="http://localhost/img/logo.svg"
-                     alt="" class="w-100">
-            </div>
-            <!--<div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in
-                    to additional content.</p>
+                    </form>
+                </div>
 
             </div>
-            <div class="card-footer text-muted">
-                2 days ago
-            </div>-->
+            <div class="card">
+                <div class=" login-key"><i class="fa fa-key" aria-hidden="true"></i></div>
+                <div class=" login-title">
+                    LOGIN
+                </div>
+                <div class=" login-form">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-control-label">USERNAME</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">PASSWORD</label>
+                            <input type="password" class="form-control">
+                        </div>
 
-        </div>
-    </div>
-</div>
+                        <div class="loginbttm">
+                            <div class="col-lg-6 login-btm login-text" style="float:left!important">
+                                <button type="reset" onclick="slider()" class="btn btn-outline-primary">REGISTRATI
+                                </button>
+                            </div>
+                            <div class="col-lg-6 login-btm login-button">
+                                <button type="submit" class="btn btn-outline-primary">LOGIN</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card card-slider left" id="slider">
+                <div class="card-slider-header" style="margin:0">
+                    <img src="http://localhost:8080/img/logo.svg"
+                         alt="" class="w-100">
+                </div>
+                <!--<div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in
+                        to additional content.</p>
 
-<div class="vinyl-container">
-    <div class="vinyl-jacket">
-        <div class="vinyl-wrapper">
-            <div class="vinyl"></div>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>-->
+
+            </div>
         </div>
-    </div>
-</div>
+    </div></section>
+
+<section><div class="vinyl-container">
+        <div class="vinyl-jacket">
+            <div class="vinyl-wrapper">
+                <div class="vinyl"></div>
+            </div>
+        </div>
+    </div></section>
 </body>
 </html>
 <script type="text/javascript">
