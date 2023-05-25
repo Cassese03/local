@@ -14,49 +14,106 @@
 
 
 
+
+
+
+
+
+
+        /*
+                                                                                .ciao {
+                                                                                    display: flex;
+                                                                                    justify-content: center;
+                                                                                    align-items: center;
+                                                                                    height: 100vh;
+                                                                                    width: 100vw;
+
+                                                                                }
+
+                                                                                .ciao2 {
+                                                                                    color: white;
+                                                                                    animation: lorenzo 2.5s both;
+                                                                                }
+
+                                                                                @keyframes lorenzo {
+                                                                                    0%{
+                                                                                        opacity: 0;
+                                                                                        transform: scale(0.3) translate3d(0,0,0);
+                                                                                    }
+                                                                                    50%{
+                                                                                        opacity: 0.9;
+                                                                                        transform: scale(1.1);
+                                                                                    }
+                                                                                    80%{
+                                                                                        opacity: 1;
+                                                                                        transform: scale(0.89);
+                                                                                    }
+                                                                                    100%{
+                                                                                        opacity: 1;
+                                                                                        transform: scale(1) translate3d(0,0,0);
+                                                                                    }
+                                                                                }
+                                                                                */
+
         @media (min-width: 768px) {
+            section:nth-child(1) {
+                background-image: url('https://cdn.pixabay.com/photo/2019/09/19/09/44/street-art-4488744_1280.jpg') !important;
+            }
+
+            section:nth-child(2) {
+                background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+                /* background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg')!important;*/
+                /* background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fearth-explorere&psig=AOvVaw2x_00HlA24WiPYwYD36Brb&ust=1685048798192000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC2qIrujv8CFQAAAAAdAAAAABAN')!important;*/
+            }
+
+            section:nth-child(3) {
+                background-image: url('https://cdn.pixabay.com/photo/2014/06/22/05/49/red-374318_1280.jpg') !important;
+            }
+
             html {
                 font-size: 22px;
             }
         }
 
-        /*
-        .ciao {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 100vw;
-
+        section:nth-child(1) {
+            background-image: url('https://cdn.pixabay.com/photo/2019/09/19/09/44/street-art-4488744_1280.jpg') !important;
         }
 
-        .ciao2 {
-            color: white;
-            animation: lorenzo 2.5s both;
+        section:nth-child(2) {
+            background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+            /* background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg')!important;*/
+            /* background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fearth-explorere&psig=AOvVaw2x_00HlA24WiPYwYD36Brb&ust=1685048798192000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC2qIrujv8CFQAAAAAdAAAAABAN')!important;*/
+        }
+        section:nth-child(4) {
+            background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+            /* background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg')!important;*/
+            /* background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fearth-explorere&psig=AOvVaw2x_00HlA24WiPYwYD36Brb&ust=1685048798192000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC2qIrujv8CFQAAAAAdAAAAABAN')!important;*/
         }
 
-        @keyframes lorenzo {
-            0%{
-                opacity: 0;
-                transform: scale(0.3) translate3d(0,0,0);
-            }
-            50%{
-                opacity: 0.9;
-                transform: scale(1.1);
-            }
-            80%{
-                opacity: 1;
-                transform: scale(0.89);
-            }
-            100%{
-                opacity: 1;
-                transform: scale(1) translate3d(0,0,0);
-            }
+        section:nth-child(3) {
+            background-image: url('https://cdn.pixabay.com/photo/2014/06/22/05/49/red-374318_1280.jpg') !important;
         }
-        */
 
         /* ! Medium */
         @media (max-width: 768px) {
+            /*
+                        section:nth-child(1) {
+                            background-image: url('https://images.pexels.com/photos/965622/pexels-photo-965622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                        }
+
+                        section:nth-child(2) {
+                            background-image: url('https://images.unsplash.com/photo-1684215075838-b68b7557ece0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=668&q=80');
+                        }
+
+                        section:nth-child(3) {
+                            background-image: url('https://cdn.pixabay.com/photo/2014/06/22/05/49/red-374318_1280.jpg')!important;
+                        }
+                        */
+            /*section:nth-child(3) {
+                background-image: url('https://media.istockphoto.com/id/1481315149/it/foto/nike-air-jordan-1-mid-lakers-top-3-sneaker-isolata-su-sfondo-bianco.jpg?s=1024x1024&w=is&k=20&c=_xPAEtRLkoBD8i3q7sAm7GX3V4aCRX-eLL5ZQgxa_mY=');
+                url('https://images.unsplash.com/photo-1684054835810-8ed5f6a1d003?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');
+
+            }*/
             html {
                 font-size: 16px;
             }
@@ -64,6 +121,23 @@
 
         /* ! Small */
         @media (max-width: 450px) {
+            /*
+                        section:nth-child(1) {
+                            background-image: url('https://images.pexels.com/photos/965622/pexels-photo-965622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                        }
+
+                        section:nth-child(2) {
+                            background-image: url('https://images.unsplash.com/photo-1684215075838-b68b7557ece0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=668&q=80');
+                        }
+                        section:nth-child(3) {
+                            background-image: url('https://cdn.pixabay.com/photo/2014/06/22/05/49/red-374318_1280.jpg')!important;
+                        }
+                        *//*
+                        section:nth-child(3) {
+                            background-image: url('https://media.istockphoto.com/id/1481315149/it/foto/nike-air-jordan-1-mid-lakers-top-3-sneaker-isolata-su-sfondo-bianco.jpg?s=1024x1024&w=is&k=20&c=_xPAEtRLkoBD8i3q7sAm7GX3V4aCRX-eLL5ZQgxa_mY=');
+                           url('https://images.unsplash.com/photo-1684054835810-8ed5f6a1d003?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');
+
+                        }*/
             html {
                 font-size: 12px;
             }
@@ -73,10 +147,12 @@
             overflow-x: hidden;
             font-family: 'Roboto', serif;
             /*background: linear-gradient(to right,rgb(67,124,205),rgb(69,214,202));;//linear-gradient(135deg, black, #220033);
-            */width: 100vw;
-            height: 100vh;
+            */
+            width: 100vw;
             min-height: 100vh;
             font-size: 3.75rem;
+            margin: 0;
+            padding: 0;
         }
 
         .lorenzo {
@@ -174,32 +250,42 @@
             -webkit-user-select: none;
         }
 
-        section{
-            height: 100vh;
-            min-height: 100vh;
-            width:100vw;
+        section {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
             background-attachment: fixed;
         }
-        section:nth-child(1){
-            background-image : url('https://images.unsplash.com/photo-1684125224205-603f78e0fab8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1883&q=80');
-        }
-        section:nth-child(2){
-            background-image : url('https://images.unsplash.com/photo-1684215075838-b68b7557ece0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=668&q=80');
-        }
-        section:nth-child(3){
-            background-image : url('https://i.imgur.com/GL7igry.png');/*url('https://images.unsplash.com/photo-1684054835810-8ed5f6a1d003?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');
-        */}
 
+        .spline {
+            width: 100vw !important;
+            height: 100vh !important;
+        }
+
+        #spline {
+            width: 100vw !important;
+            height: 100vh !important;
+        }
+
+        canvas {
+            width: 100vw !important;
+            height: 100vh !important;
+        }
     </style>
 </head>
-<body onload="enhance('lorenzo');">
+<body onload="enhance('lorenzo');try1(1);">
 {{--<div class="ciao">
     <div class="ciao2">ciao</div>
 </div>--}}
-<section><div class="lorenzo" id="lorenzo">STOCK&SHOES</div></section>
-<section><div class="container">
-        <div class="card-container">
-            <div class="card">
+<section>
+    <div class="lorenzo" id="lorenzo">STOCK&SHOES</div>
+</section>
+<section>
+    <iframe style="border:transparent;max-height: 25vh;height: 25vh;min-width: 100%;" src="https://my.spline.design/untitledcopy-71d4a915b4f230e8597434461287c128/"></iframe>
+
+    <div class="container" style="max-height: 75vh!important">
+        <div class="card-container" style="max-height: 75vh!important">
+            <div class="card" style="max-height: 75vh!important">
                 <div class=" login-key"><i class="fa fa-user" aria-hidden="true"></i></div>
                 <div class=" login-title">
                     REGISTER
@@ -231,7 +317,7 @@
                 </div>
 
             </div>
-            <div class="card">
+            <div class="card" style="max-height: 75vh!important">
                 <div class=" login-key"><i class="fa fa-key" aria-hidden="true"></i></div>
                 <div class=" login-title">
                     LOGIN
@@ -259,7 +345,7 @@
                     </form>
                 </div>
             </div>
-            <div class="card card-slider left" id="slider">
+            <div class="card card-slider left" id="slider" style="max-height: 75vh!important">
                 <div class="card-slider-header" style="margin:0">
                     <img src="http://localhost:8080/img/logo.svg"
                          alt="" class="w-100">
@@ -276,22 +362,30 @@
 
             </div>
         </div>
-    </div></section>
+    </div>
+</section>
 
-<section><div class="vinyl-container">
+<section>
+    <div class="vinyl-container">
         <div class="vinyl-jacket">
             <div class="vinyl-wrapper">
                 <div class="vinyl"></div>
             </div>
         </div>
-    </div></section>
+    </div>
+</section>{{--
+<section>
+
+</section>--}}
 </body>
 </html>
 <script type="text/javascript">
 
 
     document.title = '| Stock & Shoes |';
-
+    const try1 = id => {
+        document.getElementById('spline').classList.add("spline");
+    }
     const enhance = id => {
         const element = document.getElementById(id),
             text = element.innerText.split("");
@@ -316,6 +410,8 @@
         }
 
     }
-    document.getElementById('lorenzo').addEventListener("click",()=>{});
+
+    document.getElementById('lorenzo').addEventListener("click", () => {
+    });
 
 </script>
