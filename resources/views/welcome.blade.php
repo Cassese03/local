@@ -20,40 +20,44 @@
 
 
 
+
+
+
+
         /*
-                                                                                .ciao {
-                                                                                    display: flex;
-                                                                                    justify-content: center;
-                                                                                    align-items: center;
-                                                                                    height: 100vh;
-                                                                                    width: 100vw;
+                                                                                                                .ciao {
+                                                                                                                    display: flex;
+                                                                                                                    justify-content: center;
+                                                                                                                    align-items: center;
+                                                                                                                    height: 100vh;
+                                                                                                                    width: 100vw;
 
-                                                                                }
+                                                                                                                }
 
-                                                                                .ciao2 {
-                                                                                    color: white;
-                                                                                    animation: lorenzo 2.5s both;
-                                                                                }
+                                                                                                                .ciao2 {
+                                                                                                                    color: white;
+                                                                                                                    animation: lorenzo 2.5s both;
+                                                                                                                }
 
-                                                                                @keyframes lorenzo {
-                                                                                    0%{
-                                                                                        opacity: 0;
-                                                                                        transform: scale(0.3) translate3d(0,0,0);
-                                                                                    }
-                                                                                    50%{
-                                                                                        opacity: 0.9;
-                                                                                        transform: scale(1.1);
-                                                                                    }
-                                                                                    80%{
-                                                                                        opacity: 1;
-                                                                                        transform: scale(0.89);
-                                                                                    }
-                                                                                    100%{
-                                                                                        opacity: 1;
-                                                                                        transform: scale(1) translate3d(0,0,0);
-                                                                                    }
-                                                                                }
-                                                                                */
+                                                                                                                @keyframes lorenzo {
+                                                                                                                    0%{
+                                                                                                                        opacity: 0;
+                                                                                                                        transform: scale(0.3) translate3d(0,0,0);
+                                                                                                                    }
+                                                                                                                    50%{
+                                                                                                                        opacity: 0.9;
+                                                                                                                        transform: scale(1.1);
+                                                                                                                    }
+                                                                                                                    80%{
+                                                                                                                        opacity: 1;
+                                                                                                                        transform: scale(0.89);
+                                                                                                                    }
+                                                                                                                    100%{
+                                                                                                                        opacity: 1;
+                                                                                                                        transform: scale(1) translate3d(0,0,0);
+                                                                                                                    }
+                                                                                                                }
+                                                                                                                */
 
         @media (min-width: 768px) {
             section:nth-child(1) {
@@ -84,6 +88,7 @@
             /* background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg')!important;*/
             /* background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fearth-explorere&psig=AOvVaw2x_00HlA24WiPYwYD36Brb&ust=1685048798192000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC2qIrujv8CFQAAAAAdAAAAABAN')!important;*/
         }
+
         section:nth-child(4) {
             background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
             /* background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg')!important;*/
@@ -256,32 +261,15 @@
             width: 100%;
             background-attachment: fixed;
         }
-
-        .spline {
-            width: 100vw !important;
-            height: 100vh !important;
-        }
-
-        #spline {
-            width: 100vw !important;
-            height: 100vh !important;
-        }
-
-        canvas {
-            width: 100vw !important;
-            height: 100vh !important;
-        }
     </style>
 </head>
-<body onload="enhance('lorenzo');try1(1);">
-{{--<div class="ciao">
-    <div class="ciao2">ciao</div>
-</div>--}}
+<body onload="enhance('lorenzo');">
 <section>
     <div class="lorenzo" id="lorenzo">STOCK&SHOES</div>
 </section>
 <section>
-    <iframe style="border:transparent;max-height: 25vh;height: 25vh;min-width: 100%;" src="https://my.spline.design/untitledcopy-71d4a915b4f230e8597434461287c128/"></iframe>
+    <iframe style="border:transparent;max-height: 25vh;height: 25vh;min-width: 100%;"
+            src="https://my.spline.design/untitledcopy-71d4a915b4f230e8597434461287c128/"></iframe>
 
     <div class="container" style="max-height: 75vh!important">
         <div class="card-container" style="max-height: 75vh!important">
@@ -367,25 +355,60 @@
 
 <section>
     <div class="vinyl-container">
-        <div class="vinyl-jacket">
-            <div class="vinyl-wrapper">
+        <div class="vinyl-jacket audio-button">
+            <div class="vinyl-wrapper ">
                 <div class="vinyl"></div>
             </div>
+            <audio id="audio-player" src="https://ia800207.us.archive.org/23/items/Jovanotti-ATe/Jovanotti-ATe.mp3"
+                   style="transform: translateY(575%)"
+                   controls></audio>
         </div>
     </div>
-</section>{{--
+</section>
+<?php /*
 <section>
+    <div class="player">
+        <div class="album-art">
+            <!-- Immagine dell'album -->
+        </div>
+        <div class="song-info">
+            <h3 class="song-title">Titolo della canzone</h3>
+            <p class="artist-name">Nome dell'artista</p>
+        </div>
+        <div class="controls">
+            <button class="play-button">Play</button>
+            <button class="next-button">Successivo</button>
+        </div>
+    </div>
 
-</section>--}}
+</section>
+<section>
+    <div class="player">
+        <img src="http://localhost:8080/lolloepatata.jpg" alt="Immagine dell'album" class="album-art">
+        <div class="controls">
+            <button class="play-button">Play</button>
+            <button class="pause-button">Pausa</button>
+        </div>
+    </div>
+
+
+</section> */ ?>
 </body>
 </html>
 <script type="text/javascript">
 
+    const audioPlayer = document.getElementById('audio-player');
+    const audioButton = document.querySelector('.audio-button');
+
+    audioButton.addEventListener('click', () => {
+        if (audioPlayer.paused == true)
+            audioPlayer.play();
+        else
+            audioPlayer.pause();
+    });
 
     document.title = '| Stock & Shoes |';
-    const try1 = id => {
-        document.getElementById('spline').classList.add("spline");
-    }
+
     const enhance = id => {
         const element = document.getElementById(id),
             text = element.innerText.split("");
