@@ -1,0 +1,95 @@
+
+.lorenzo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    animation: rainbow_color 8s ease infinite;
+}
+
+.container_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    animation: rainbow_color 8s ease infinite;
+    background: linear-gradient(-45deg, #ffeb3b, #74efff, #9c27b0);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+}
+
+@keyframes rainbow_color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes lorenzo_1_6 {
+    0%, 10% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10vh) rotate(-360deg);
+    }
+    90%, 100% {
+        transform: translateY(0vh) rotate(-0deg);
+    }
+}
+
+@keyframes lorenzo_7_all {
+    0%, 10% {
+        transform: translateY(0vh) rotate(0deg);
+    }
+    50% {
+        transform: translateY(10vh) rotate(360deg);
+    }
+    90%, 100% {
+        transform: translateY(0vh) rotate(-0deg);
+    }
+}
+
+@keyframes lorenzo_6 {
+    0%, 10% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    90%, 100% {
+        transform: rotate(-0deg);
+    }
+}
+
+.lorenzo > .letter:nth-child(-n+6) {
+    animation: lorenzo_1_6 4s infinite, rainbow_color 8s ease infinite;
+    animation-delay: 1s;
+}
+
+.lorenzo > .letter:nth-child(6) {
+    animation: lorenzo_6 4s infinite, rainbow_color 8s ease infinite;
+    animation-delay: 1s;
+}
+
+.lorenzo > .letter:nth-child(n+7) {
+    animation: lorenzo_7_all 4s infinite, rainbow_color 8s ease infinite;
+    animation-delay: 1s;
+}
+
+.letter {
+    animation: rainbow_color 8s ease infinite;
+    background: linear-gradient(-45deg, #ffeb3b, #74efff, #9c27b0);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}

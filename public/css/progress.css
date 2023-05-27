@@ -1,0 +1,21 @@
+
+progress {
+    position: fixed;
+    z-index: 1;
+    bottom: 2px;
+    left: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    border: none;
+    background: transparent;
+}
+
+progress::-webkit-progress-bar {
+    background: inherit;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202), rgb(69, 214, 202), red);
+}
