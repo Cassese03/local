@@ -4,11 +4,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: red;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b30000;
+        }
+
         <?php include 'css/lorenzo.css';?>
         <?php include 'css/login.css';?>
         <?php include 'css/vinyl.css';?>
         <?php include 'css/progress.css';?>
         <?php include 'css/carousel.css';?>
+        <?php include 'css/netflix.css';?>
 
         section {
             background-size: cover;
@@ -32,7 +51,13 @@
         }
 
         section:nth-child(4) {
-            background-color: #2A2723;
+            position: relative;
+            overflow: hidden;
+            background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+        }
+
+        section:nth-child(5) {
+            background-image: url("https://www.giuseppecaprotti.it/2019/wp-content/uploads/Netflix-Logo.png");
         }
 
         /* ! Big */
@@ -117,8 +142,11 @@
     </style>
     <title>Lorenzo WOW</title>
 </head>
+
 <body onload="enhance('lorenzo');">
+
 <progress max="100" value="0"></progress>
+
 <div class="container">
     <section>
         <div class="lorenzo" id="lorenzo">STOCK&SHOES</div>
@@ -222,7 +250,7 @@
             </div>
         </div>
     </section>
-    <section style="position:absolute;">
+    <section>
         <div class="body_carousel">
             <div class="container_carousel">
                 <div class="carousel_carousel">
@@ -239,8 +267,58 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container_netflix snaps-inline">
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://plus.unsplash.com/premium_photo-1684338795288-097525d127f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80">
+                <label style="font-size: 1rem;">Titolo del Film</label>
+            </div>
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://images.unsplash.com/photo-1684581789611-0e2f91826b46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80">
+                <label style="font-size: 1rem;">Titolo del Film</label>
+            </div>
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://images.unsplash.com/photo-1684530535738-49239ce8cd29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80">
+                <label style="font-size: 1rem;">Titolo del Film</label>
+            </div>
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://images.unsplash.com/photo-1684167932618-7521c17a8857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80">
+                <label style="font-size: 1rem;">Titolo del Film</label>
+            </div>
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://images.unsplash.com/photo-1684350773533-689f34efa3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80">
+                <label style="font-size: 1rem;">Titolo del Film</label>
+            </div>
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://images.unsplash.com/photo-1684804330388-9f2768c5a3ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=996&q=80">
+                <label style="font-size: 1rem;">Titolo del Film</label>
+            </div>
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://images.unsplash.com/photo-1684803975492-3025a51d60fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80">
+                <label style="font-size: 1rem;">Titolo del Film</label>
+            </div>
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://images.unsplash.com/photo-1684780451370-388a23a7902f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">
+                <label style="font-size: 1rem;">Titolo del Film</label>
+            </div>
+            <div class="image_netflix">
+                <img alt="img"
+                     src="https://images.unsplash.com/photo-1679513048495-9c8ab7a774b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80">
+                <label>Titolo del Film</label>
+            </div>
+        </div>
+    </section>
 </div>
 </body>
+
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
